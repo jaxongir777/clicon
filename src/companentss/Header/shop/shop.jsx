@@ -1,5 +1,5 @@
 import React from "react";
-import "./Shop.css";
+import "./shop.css";
 
 function Shop({ cartItems, updateQty, resetCart }) {
   if (cartItems.length === 0) {
