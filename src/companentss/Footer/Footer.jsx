@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Pastdagi CSS ni shu faylga solasiz
+import './footer.css'; // Pastdagi CSS ni shu faylga solasiz
 
 const Footer = () => {
   return (
