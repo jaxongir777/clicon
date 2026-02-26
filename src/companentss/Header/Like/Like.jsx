@@ -1,5 +1,5 @@
 import React from 'react';
-import './Like.css';
+import './like.css';
 
 function Like({ likedItems, resetLike }) {
   if (likedItems.length === 0) {
