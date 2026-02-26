@@ -1,0 +1,380 @@
+/* wrapper.css */
+
+/* Umumiy wrapper */
+.max-w-7xl {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.md\:flex-row {
+  flex-direction: row;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.font-sans {
+  font-family: Arial, sans-serif;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+/* Banner qismi */
+.md\:w-1\/4 {
+  width: 25%;
+}
+
+.bg-\[\#F2C94C\] {
+  background-color: #F2C94C;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Banner matni */
+.text-red-600 {
+  color: #dc2626;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.text-gray-700 {
+  color: #4b5563;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.bg-\[\#FA8232\] {
+  background-color: #FA8232;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.hover\:bg-orange-600:hover {
+  background-color: #ea580c;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Banner pastidagi rasm */
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+/* Mahsulotlar qismi */
+.flex-1 {
+  flex: 1;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-orange-500 {
+  border-color: #f97316;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.hover\:text-black:hover {
+  color: #000;
+}
+
+/* Products grid */
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.sm\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.lg\:grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.border-t {
+  border-top: 1px solid #e5e7eb;
+}
+
+.border-l {
+  border-left: 1px solid #e5e7eb;
+}
+
+.border-gray-100 {
+  border-color: #f3f4f6;
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+/* Mahsulot kartasi */
+.p-4 {
+  padding: 1rem;
+}
+
+.border-r {
+  border-right: 1px solid #f3f4f6;
+}
+
+.border-b {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.hover\:shadow-xl:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.transition-shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.relative {
+  position: relative;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.max-h-full {
+  max-height: 100%;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+/* Hover action icons */
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-black\/5 {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.transition-opacity {
+  transition: opacity 0.3s ease;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.hover\:bg-orange-500:hover {
+  background-color: #f97316;
+}
+
+.hover\:text-white:hover {
+  color: #fff;
+}
+
+/* Badge */
+.text-10px {
+  font-size: 10px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+/* Stars */
+.text-yellow-400 {
+  color: #facc15;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+/* Line clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+/* Responsive pseudo-elements for background decoration */
+.max-w-7xl::before,
+.max-w-7xl::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,200,50,0.15);
+}
+
+.max-w-7xl::before {
+  top: -50px;
+  left: -50px;
+}
+
+.max-w-7xl::after {
+  bottom: -50px;
+  right: -50px;
+}
