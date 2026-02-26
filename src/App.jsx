@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // <-- HashRouter
 import Header from './companentss/Header/Header';
 import Hero from './companentss/Hero/Hero';
 import Section from './companentss/Section/Section';
@@ -12,19 +12,19 @@ import Shop from './companentss/Header/shop/shop';
 import Like from './companentss/Header/Like/Like';
 
 function App() {
-  const [cartItems, setCartItems] = useState([]);
-  const [likedItems, setLikedItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]); 
+  const [likedItems, setLikedItems] = useState([]); 
 
   const addToCart = (product) => {
-    setCartItems((prev) => {
+    setCartItems(prev => {
       const exist = prev.find(item => item.id === product.id);
-      if (exist) return prev.map(item => item.id === product.id ? { ...item, qty: item.qty + 1 } : item);
-      return [...prev, { ...product, qty: 1 }];
+      if (exist) return prev.map(item => item.id === product.id ? {...item, qty: item.qty + 1} : item);
+      return [...prev, {...product, qty: 1}];
     });
   };
 
   const addToLike = (product) => {
-    setLikedItems((prev) => {
+    setLikedItems(prev => {
       const exist = prev.find(item => item.id === product.id);
       if (!exist) return [...prev, product];
       return prev;
@@ -32,12 +32,9 @@ function App() {
   };
 
   const updateQty = (id, type) => {
-    setCartItems(prev =>
-      prev.map(item =>
-        item.id === id
-          ? { ...item, qty: type === "inc" ? item.qty + 1 : item.qty - 1 }
-          : item
-      ).filter(item => item.qty > 0)
+    setCartItems(prev => 
+      prev.map(item => item.id === id ? {...item, qty: type === "inc" ? item.qty + 1 : item.qty - 1} : item)
+          .filter(item => item.qty > 0)
     );
   };
 
@@ -65,14 +62,12 @@ function App() {
 
         <Route 
           path="/shop" 
-          element={
-            <Shop cartItems={cartItems} updateQty={updateQty} resetCart={resetCart} />
-          } 
+          element={<Shop cartItems={cartItems} updateQty={updateQty} resetCart={resetCart} />}
         />
 
         <Route 
           path="/like" 
-          element={<Like likedItems={likedItems} resetLike={resetLike} />} 
+          element={<Like likedItems={likedItems} resetLike={resetLike} />}
         />
       </Routes>
     </Router>
